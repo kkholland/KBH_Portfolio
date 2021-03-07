@@ -9,6 +9,10 @@ body{
     background-color: rgb(249, 246, 243);
 }
 
+main{
+    margin-top: 10vh;
+}
+
 h2{
     font-size: 1.3em;
     font-weight: normal;
@@ -43,16 +47,17 @@ a:focus{
 /* Header styles */
 
 header{
-    height: 25vh;
+    /* height: 25vh; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 0.9em;
     text-align: right;
 }
 
 header img{
     width: 70%;
-    max-width: 500px;
+    max-width: 260px;
     height: fit-content;
 }
 
@@ -76,6 +81,10 @@ section p, section ul{
     width: 100%;
 }
 
+.project-section{
+    margin-bottom: 0;
+}
+
 .separator{
     width: 100%;
     height: 4vh;
@@ -97,20 +106,47 @@ span{
 
 /* 600 - 900 */
 /* grid 2 column projects under the about and links */
-@media only screen and (min-width:600px) and (max-width: 900px){
+@media only screen and (min-width:600px){
     .projects{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
     }
+
+    header{
+        font-size: 1.1em;
+    }
+
+    
 }
 
 /* 900 - 1200 */
 /* move 2 column projects next to the about and links */
-@media only screen and (min-width:600px) and (max-width: 900px){
-    .projects{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 30px;
+@media only screen and (min-width:900px){
+    body{
+        height: 100%;
     }
+    
+    main{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 60px;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 60px;
+    }
+
+    header img{
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+    .projects{
+        height: 70vh;
+        overflow-y: auto;
+    }
+
 }
