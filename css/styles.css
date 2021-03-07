@@ -96,5 +96,21 @@ span{
 
 
 /* 600 - 900 */
-/* flex 2 column projects under the about and links */
+/* grid 2 column projects under the about and links */
+@media only screen and (min-width:600px) and (max-width: 900px){
+    .projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+}
 
+/* 900 - 1200 */
+/* move 2 column projects next to the about and links */
+@media only screen and (min-width:600px) and (max-width: 900px){
+    .projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+}
