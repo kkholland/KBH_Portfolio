@@ -20,14 +20,16 @@ h2{
     margin-bottom: 15px;
 }
 
-a.expand{
-    padding: 0 5px;
-    border: none;
-    outline: none;
-    background-color: #333;
-    color: white;
+p{
+    line-height: 140%;
 }
 
+li{
+    margin: 5px 0;
+}
+
+
+/* Link Styling */
 a{
     text-decoration: none;
     color: #000000;
@@ -41,6 +43,30 @@ a:visited{
 a:focus{
     color: rgb(121, 121, 121);
 }
+
+/* Button Styling */
+a.expand{
+    padding: 0 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+}
+
+a.expand:hover{
+    text-decoration: none;
+    background-color: rgb(121, 121, 121);
+}
+
+a.expand:focus{
+    background-color: white;
+    color: black;
+}
+
+a.expand:visited{
+    
+}
+
+
 
 
 
@@ -116,12 +142,11 @@ span{
     header{
         font-size: 1.1em;
     }
-
     
 }
 
-/* 900 - 1200 */
-/* move 2 column projects next to the about and links */
+/* 900+ */
+/* move 2 column projects up next to the about and links */
 @media only screen and (min-width:900px){
     body{
         height: 100%;
@@ -144,9 +169,15 @@ span{
         max-width: 500px;
         height: auto;
     }
+
     .projects{
-        height: 70vh;
+        height: 68vh;
         overflow-y: auto;
+        scroll-snap-type: y mandatory;
+    }
+
+    .project{
+        scroll-snap-align: start;
     }
 
 }
