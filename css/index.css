@@ -1,0 +1,102 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: hotpink;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+p.subtitle{
+    color: hotpink;
+    text-align: center;
+    font-size:12px;
+}
+
+p{font-size:16px;}
+a{text-decoration: none;}
+
+footer{
+    background-color: lightseagreen;
+    height: 200px;
+    width: 100%; 
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.intro{
+    width: 400px;
+    max-height: 100px;
+    margin: 100px 50px;
+    padding: 100px 50px;
+}
+
+.borderbox{
+    border-right: teal 5px solid;
+    border-bottom: teal 5px solid;
+    border-top: teal 1px solid;
+    border-left: teal 1px solid;
+}
+
+.designPhilosophy{
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    padding: 100px 75px;
+    background-color: lightseagreen;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+}
+
+.projects{
+    width: 100%;
+    height: 550px;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    width: 150px;
+    height: 25px;
+    margin: 0 auto;
+}
+
+.projectgroup1{
+    display:flex;
+    justify-content: center;
+}
+
+.projectgroup2{
+    display:flex;
+    justify-content: center;
+}
+
+.projectLarge{
+    width:400px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.projectSmall{
+    width: 200px;
+    height: 200px;
+
+}
+
+
+#minesweeper{
+    display: inline-block;
+    float:right;
+    margin-left: 20px;
+}
+
+#promptly{
+    margin-left: 20px;
+}
