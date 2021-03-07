@@ -50,6 +50,7 @@ a.expand{
     border: none;
     background-color: #333;
     color: white;
+    text-decoration: none;
 }
 
 a.expand:hover{
@@ -99,10 +100,19 @@ section p, section ul{
     list-style-type: none;
 }
 
+
+
 /* Project Styling */
+/* .project{
+    background-color: white;
+    padding: 4%;
+    height: auto;
+} */
+
 .project h3{
     margin: 5px 0;
 }
+
 .project img{
     width: 100%;
 }
@@ -180,4 +190,9 @@ span{
         scroll-snap-align: start;
     }
 
+    .separator{
+        border: none;
+        height: 1vh;
+        margin-bottom: 4vh;
+    }
 }
